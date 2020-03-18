@@ -5,7 +5,7 @@
         <description>Recent content in Posts on First Site by Hugo</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 18 Mar 2020 11:04:18 +0600</lastBuildDate>
+        <lastBuildDate>Wed, 18 Mar 2020 14:37:18 +0600</lastBuildDate>
         <atom:link href="https://Nuwaisir-1998.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
@@ -967,6 +967,25 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 <p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
 <h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
 <p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Test</title>
+            <link>https://Nuwaisir-1998.github.io/posts/2020/03/test/</link>
+            <pubDate>Wed, 18 Mar 2020 14:37:18 +0600</pubDate>
+            
+            <guid>https://Nuwaisir-1998.github.io/posts/2020/03/test/</guid>
+            <description>  title    This is a paragraph   </description>
+            <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+</head>
+<body>
+	<p> This is a paragraph </p>
+</body>
+</html>
 ]]></content>
         </item>
         
