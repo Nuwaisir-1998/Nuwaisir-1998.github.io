@@ -976,15 +976,17 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
             <pubDate>Wed, 18 Mar 2020 14:37:18 +0600</pubDate>
             
             <guid>https://Nuwaisir-1998.github.io/posts/2020/03/test/</guid>
-            <description>  title    This is a paragraph Moodle link   </description>
+            <description>  title    This is a paragraph and this is moodle : Moodle link   </description>
             <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
 <head>
 	<title>title</title>
 </head>
 <body>
-	<p> This is a paragraph </p>
+	<p> This is a paragraph and this is moodle :  
 	<a href="https://cse.buet.ac.bd/moodle">Moodle link</a>
+	</p>
+	
 </body>
 </html>
 ]]></content>
