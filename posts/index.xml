@@ -977,7 +977,8 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
             
             <guid>https://Nuwaisir-1998.github.io/posts/2020/03/test/</guid>
             <description>Circles  /* Always set the map height explicitly to define the size of the div * element that contains the map. */ #map { height:400px; width:100%; } /* Optional: Makes the sample page fill the window. */ html, body { height: 100%; margin: 0; padding: 0; }     Population comparison    // This example creates circles on the map, representing populations in North // America.</description>
-            <content type="html"><![CDATA[<!DOCTYPE html>
+            <content type="html"><![CDATA[
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -1054,7 +1055,8 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo6ODUQwXHXFJJsOGxBu9A094RFNMMcmI&callback=initMap">
     </script>
   </body>
-</html>]]></content>
+</html> -->
+]]></content>
         </item>
         
         <item>
