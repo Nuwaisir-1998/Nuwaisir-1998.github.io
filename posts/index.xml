@@ -977,9 +977,9 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
             
             <guid>https://Nuwaisir-1998.github.io/posts/2020/03/firstpost/</guid>
             <description>##Introduction
-Hello all. I&amp;rsquo;m Nuwaisir.</description>
+Hello all. I&amp;rsquo;m Nuwaisir. I live in Bangladesh.</description>
             <content type="html"><![CDATA[<p>##Introduction</p>
-<p>Hello all. I&rsquo;m Nuwaisir.</p>
+<p>Hello all. I&rsquo;m Nuwaisir. I live in Bangladesh.</p>
 ]]></content>
         </item>
         
