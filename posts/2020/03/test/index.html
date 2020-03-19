@@ -43,7 +43,7 @@
 <meta itemprop="description" content="Circles  /* Always set the map height explicitly to define the size of the div * element that contains the map. */ #map { height:400px; width:100%; } /* Optional: Makes the sample page fill the window. */ html, body { height: 100%; margin: 0; padding: 0; }     Population comparison    // This example creates circles on the map, representing populations in North // America.">
 <meta itemprop="datePublished" content="2020-03-18T14:37:18&#43;06:00" />
 <meta itemprop="dateModified" content="2020-03-18T14:37:18&#43;06:00" />
-<meta itemprop="wordCount" content="208">
+<meta itemprop="wordCount" content="336">
 <meta itemprop="image" content="https://Nuwaisir-1998.github.io"/>
 
 
@@ -119,7 +119,7 @@
     <main class="post">
 
         <div class="post-info">
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
 
             
 
@@ -214,6 +214,95 @@
   </body>
 </html> -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.min.css" integrity="sha256-G2I5BfHSSC9AXQyjI9B2w0Fue6RdgGpTAt3m2Zmzw04=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Store Locator</title>
+</head>
+<body>
+    <div class="container my-3">
+       <h1 class="display-4 text-center"><i class="fas fa-map-marked mr-4"></i>Store Locator</h1>
+       <a href="add.html" class="btn btn-success mb-4">Add Store</a>
+       <div 
+        id="map" 
+        style="width: 100%; height: 500px;border-radius: 5px;"></div>
+     </div> 
+     
+     <script>
+     	mapboxgl.accessToken = 'pk.eyJ1IjoibnV3YWlzaXIiLCJhIjoiY2s3eW5leHRmMDBmajNrbTB4bnViNnNpciJ9.PQs4dqbDywb75CpYpjtPeg';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+zoom: 9,
+center: [-71.157895, 42.707741]
+});
+
+// Fetch stores from API
+async function getStores() {
+    const res = await fetch('/api/v1/stores');
+    const data = await res.json();
+  
+    const stores = data.data.map(store => {
+      return {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [
+            store.location.coordinates[0],
+            store.location.coordinates[1]
+          ]
+        },
+        properties: {
+          storeId: store.storeId,
+          icon: 'shop'
+        }
+      };
+    });
+  
+    loadMap(stores);
+  }
+
+
+// Load map with stores
+function loadMap(stores) {
+    map.on('load', function() {
+      map.addLayer({
+        id: 'points',
+        type: 'symbol',
+        source: {
+          type: 'geojson',
+          data: {
+            type: 'FeatureCollection',
+            features: stores
+          }
+        },
+        layout: {
+          'icon-image': '{icon}-15',
+          'icon-size': 1.5,
+          'text-field': '{storeId}',
+          'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+          'text-offset': [0, 0.9],
+          'text-anchor': 'top'
+        }
+      });
+    });
+  }
+
+  loadMap();
+     	
+     </script>
+</body>
+</html>
             </div>
         </article>
 
@@ -221,7 +310,7 @@
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>208 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>336 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-03-18 14:37 &#43;0600</p>
         </div>
