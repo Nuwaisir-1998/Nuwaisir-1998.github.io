@@ -1058,7 +1058,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 </html> -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1141,11 +1141,11 @@ function loadMap(stores) {
     });
   }
 
-  loadMap();
-     	
+  loadMap();s
+
      </script>
 </body>
-</html>]]></content>
+</html> -->]]></content>
         </item>
         
         <item>
