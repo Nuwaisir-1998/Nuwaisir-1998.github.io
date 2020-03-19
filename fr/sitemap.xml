@@ -3,36 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://Nuwaisir-1998.github.io/fr/</loc>
-    <lastmod>2020-03-18T14:37:18+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Nuwaisir-1998.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Nuwaisir-1998.github.io/fr/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://Nuwaisir-1998.github.io/fr/posts/</loc>
-    <lastmod>2020-03-18T14:37:18+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Nuwaisir-1998.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Nuwaisir-1998.github.io/fr/posts/"
-                />
-  </url>
-  
-  <url>
     <loc>https://Nuwaisir-1998.github.io/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -43,6 +13,20 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://Nuwaisir-1998.github.io/fr/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://Nuwaisir-1998.github.io/fr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Nuwaisir-1998.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://Nuwaisir-1998.github.io/fr/"
                 />
   </url>
   

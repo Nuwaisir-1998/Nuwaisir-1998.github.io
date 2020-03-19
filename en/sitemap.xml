@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://Nuwaisir-1998.github.io/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://Nuwaisir-1998.github.io/</loc>
-    <lastmod>2020-03-18T14:37:18+06:00</lastmod>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -15,26 +20,6 @@
                 hreflang="en"
                 href="https://Nuwaisir-1998.github.io/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://Nuwaisir-1998.github.io/posts/</loc>
-    <lastmod>2020-03-18T14:37:18+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Nuwaisir-1998.github.io/fr/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Nuwaisir-1998.github.io/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://Nuwaisir-1998.github.io/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
